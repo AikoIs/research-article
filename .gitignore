@@ -1,14 +1,31 @@
-# Игнорируем виртуальное окружение
-venv/
-
-# Игнорируем файлы данных
-data/
-
-# Игнорируем файлы Jupyter Notebook кеша
+# Python bytecode
 __pycache__/
+*.py[cod]
 
-# Игнорируем временные файлы
-*.log
-*.csv
-*.txt
+# Mac / Windows / Linux лишние файлы
 .DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+logs/
+main.py
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Исключаем всё содержимое папок raw и processed
+data/raw/
+data/processed/
+modules/catboost_info/
+# Игнорировать всё в папке Models (включая подпапки)
+Models/**
+
+# Но НЕ игнорировать .png файлы
+!Models/**/*.png
