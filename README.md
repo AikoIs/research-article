@@ -7,6 +7,32 @@ Activating the environment:
 Install everything from the environment
 `pip install -r requirements.txt`
 
+## BASELINE IMPLEMENTATION
+
+A set of data processing scripts developed in my dissertation was used as a baseline for this pipeline:
+
+**Author**: Ismukhamedova A., Belginova S.  
+**Work**: Integrating machine learning in electronic health passport based on WHO study and healthcare resources  
+**Where published**: Information Fusion, 2023. DOI: [10.1016/j.imu.2023.101428](https://doi.org/10.1016/j.imu.2023.101428)  
+**Source code**: https://github.com/AikoIs/Data.git  
+**MIMIC version used**: MIMIC‑III  
+Labevents table schema: https://mit-lcp.github.io/mimic-schema-spy/tables/labevents.html
+
+All scripts in the `main` branch of this repository are extensions and improvements to the baseline modules described above.
+
+**Key improvements over the baseline**:
+Transition from MIMIC‑III to MIMIC‑IV (https://physionet.org/content/mimic4wdb/0.1.0/)  
+- Extended EDA (module `eda_improved.py`)  
+- More flexible and modular `preprocessing_improved.py`:
+  - Additional IQR outlier filtering  
+  - Log transformations for asymmetric features  
+- Centralized scaling system (Min–Max, RobustScaler)  
+- New feature engineering steps added (`feature_engineering_improved.py`)  
+- Updated model training module (`model_training_improved.py`) supporting XGBoost, CatBoost, etc.
+
+See also [CHANGELOG.md](./CHANGELOG.md) for the complete version history and differences.
+
+
 ## Project structure
 ```project/
 ├── data/                  # data storage directory
