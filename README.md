@@ -11,7 +11,7 @@ Install everything from the environment
 
 A set of data processing scripts developed in my dissertation was used as a baseline for this pipeline:
 
-**Author**: Ismukhamedova A., Belginova S.  
+**Author**: Ismukhamedova A., Uvalieva I., Belginova S.  
 **Work**: Integrating machine learning in electronic health passport based on WHO study and healthcare resources  
 **Where published**: Information Fusion, 2023. DOI: [10.1016/j.imu.2023.101428](https://doi.org/10.1016/j.imu.2023.101428)  
 **Source code**: https://github.com/AikoIs/Data.git  
